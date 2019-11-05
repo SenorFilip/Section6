@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-md-5">
-    <app-recipe-list rec></app-recipe-list>
+    <app-recipe-list (recipeItemDetailsEvent)="onRecipeItemClick($event)"></app-recipe-list>
   </div>
   <div class="col-md-7">
-    <app-recipe-detail></app-recipe-detail>
+    <app-recipe-detail [recipeDetails]="recipe"></app-recipe-detail>
   </div>
 </div>

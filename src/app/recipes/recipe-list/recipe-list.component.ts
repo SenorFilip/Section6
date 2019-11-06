@@ -30,9 +30,13 @@ export class RecipeListComponent implements OnInit {
     console.log('jbg');
   }
 
-  showRecipeDetailsOnClick(index: number) {
-    // console.log(this.recipes[index]);
-    this.recipeItemDetailsEvent.emit(this.recipes[index]);
+  onRecipeSelected(recipe: Recipe) {
+    this.recipeItemDetailsEvent.emit(recipe);
   }
+
+  // showRecipeDetailsOnClick(index: number) {
+  //   // console.log(this.recipes[index]);
+  //   this.recipeItemDetailsEvent.emit(this.recipes[index]);
+  // }
 
 }

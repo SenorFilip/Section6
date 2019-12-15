@@ -29,12 +29,19 @@
             style="cursor: pointer">To Shopping List
           </a>
         </li>
-        <li><a style="cursor: pointer"
-               (click)="onEditRecipe()" >
+        <li>
+          <a style="cursor: pointer"
+             (click)="onEditRecipe()" >
 <!--               routerLink="edit">-->
-          Edit Recipe
-        </a></li>
-        <li><a style="cursor: pointer">Delete Recipe</a></li>
+            Edit Recipe
+          </a>
+        </li>
+        <li>
+          <a style="cursor: pointer"
+             (click)="onDeleteRecipe()">
+            Delete Recipe
+          </a>
+        </li>
       </ul>
     </div>
   </div>
